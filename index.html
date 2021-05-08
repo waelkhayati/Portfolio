@@ -23,30 +23,15 @@
 
 <!--Script-->
 
-<script>
-    
-
-
-    function validateform(){  
-        var string=document.getElementsByName(name).value; 
-
-        var num=document.form.tel.value;
-            if( string.match(format) ){
-                return alert("name not valid");
+    <script>
+        function social() {
+            var x = document.getElementById("social");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
             }
-
-
-    
-            if (isNaN(num)){  
-            document.getElementById("numloc").innerHTML="Enter Numeric value only";  
-            return false;  
-            }
-        
-            else{  
-                return true;  
-            }  
-    }  
-
+        }
     </script>
     <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script><script >AOS.init({duration: 1000,})</script>
 
@@ -54,7 +39,7 @@
 
 <!--This part is bootstrap-->
 
-    <nav class="navbar navbar-inverse" style="background-color:transparent; border:none; ">
+    <nav class="navbar navbar-inverse" style="background-color:transparent; border:none;">
     <div class="container-fluid">
         <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -68,7 +53,7 @@
         <ul class="nav navbar-nav" style="display: flex;">
             <li class="active"><a href="index.html">Home</a></li>
             <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Work <span class="caret"></span></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" onclick="social()" href="#">My Work <span class="caret"></span></a>
             <ul class="dropdown-menu" style="margin-bottom: 150px;">
                 <li><a href="logos.html">Logos</a></li>
                 <li><a href="warning.html">UI/UX</a></li>
@@ -78,8 +63,8 @@
             </ul>
             </li>
             <li><a href="#contact">Contact</a></li>
-            <li style="position: absolute; right:15px;">
-                <section id="social">
+            <li style="position: absolute; right:15px;" >
+                <section id="social" >
                     <div><a href="https://www.facebook.com/KhayatiWael/" target="_blank"><img src="https://i.imgur.com/V8ILiBl.png"  alt="FB"></a></div>
                     <div id="vl"></div>
                     <div><a href="https://www.linkedin.com/in/wael-khayati-6a4289200/" target="_blank"><img src="https://i.imgur.com/PVRumk5.png" alt="Linked in"></a></div>
