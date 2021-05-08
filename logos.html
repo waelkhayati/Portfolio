@@ -1,444 +1,446 @@
+
 <html lang="en">
-<head>
-    <title>Portfolio|Logos</title>
-    <link rel="icon" href="https://i.imgur.com/P8ldVGW.png">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'><link rel="stylesheet" href="style.css">
-    <meta property="og:image" content="https://i.imgur.com/NdD8Cjl.png" />
-    <link href="css/demo-page.css" rel="stylesheet" media="all">
-    <link href="css/imagehover.min.css" rel="stylesheet" media="all">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+    <head>
+        <title>Portfolio|Logos</title>
+        <link rel="icon" href="https://i.imgur.com/P8ldVGW.png">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'><link rel="stylesheet" href="style.css">
+        <meta property="og:image" content="https://i.imgur.com/NdD8Cjl.png" />
+        <link href="css/demo-page.css" rel="stylesheet" media="all">
+        <link href="css/imagehover.min.css" rel="stylesheet" media="all">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     
-     <style>
-
-        #gallery{
-            text-align: center;
-            margin-top: 100px;
-            margin-bottom: 100px;
-        }   
-
+    
         
-        #flip-box {
-            background-color: transparent;
-            width: 650px;
-            height: 370px;
-            perspective: 1000px; 
-            display: inline-block;
-            cursor: pointer;
-        }
-
-        #flip-box-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-        }
-
-        #flip-box:hover #flip-box-inner {
-            transform: rotateY(180deg);
-        }
-
-        #flip-box-front, #flip-box-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden; 
-            backface-visibility: hidden;
-        }
-
-        #flip-box-front {
-            background-color: #bbb;
-            color: black;
-        }
-
-        #flip-box-front img {
-            width: 650px;
-            height: 370px;
-        }
-
-        #flip-box-back {
-            background-color: cadetblue;
-            color: white;
-            transform: rotateY(180deg);
-        }
-
-        #seemore, #seeless{
-            color: white;
-            text-decoration: underline;
-            font-size: 20px;
-            margin-top: 100px;
-            margin-bottom: 100px;
-        }
-
-        #seeless {
-            color: white;
-        }
-
-        #seemore:hover, #seeless:hover{
-            color: cadetblue;
-        }
-
-        #more{
-            display: none;
-        }
-
-        #btn {
-            border-radius: 100px; 
-            color: white;
-            outline: none; 
-            border: 2px white solid;
-            background-color:cadetblue;
-            padding: 10px; 
-            padding-top: 8px; 
-            margin: 10px; 
-            margin-top: 20px; 
-            margin-bottom: 20px;
-        }
-
-        #btn:hover{
-            border: 2px white solid;
-            background-color:white;
-            color: cadetblue; 
-            outline: none; 
-
-        }
-
-        #modal{
-            text-align: center;
-            background-image: url(https://i.imgur.com/Ubt0W3T.png);
-            width: 800px;
-            height: 1516px;
-            background-size: contain;
-            position: absolute;
-            left: -18%; 
-        }
-
-        .close{
-            font-size: 50px;
-            margin-right:15px
-        }
-
-        @media (max-width: 420px) {
+         <style>
+    
             #gallery{
                 text-align: center;
-                margin-top: 50px;
-                margin-bottom: 50px;
-            } 
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }   
+    
             
-            #seemore, #seeless{
-                margin-top: 50px;
-                margin-bottom: 50px;
-            }
-     
             #flip-box {
-                width: 325px;
-                height: 185px;
+                background-color: transparent;
+                width: 650px;
+                height: 370px;
+                perspective: 1000px; 
+                display: inline-block;
+                cursor: pointer;
+            }
+    
+            #flip-box-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+            }
+    
+            #flip-box:hover #flip-box-inner {
+                transform: rotateY(180deg);
+            }
+    
+            #flip-box-front, #flip-box-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden; 
+                backface-visibility: hidden;
+            }
+    
+            #flip-box-front {
+                background-color: #bbb;
+                color: black;
+            }
+    
+            #flip-box-front img {
+                width: 650px;
+                height: 370px;
+            }
+    
+            #flip-box-back {
+                background-color: cadetblue;
+                color: white;
+                transform: rotateY(180deg);
+            }
+    
+            #seemore, #seeless{
+                color: white;
+                text-decoration: underline;
+                font-size: 20px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+    
+            #seeless {
+                color: white;
+            }
+    
+            #seemore:hover, #seeless:hover{
+                color: cadetblue;
+            }
+    
+            #more{
+                display: none;
+            }
+    
+            #btn {
+                border-radius: 100px; 
+                color: white;
+                outline: none; 
+                border: 2px white solid;
+                background-color:cadetblue;
+                padding: 10px; 
+                padding-top: 8px; 
+                margin: 10px; 
+                margin-top: 20px; 
+                margin-bottom: 20px;
+            }
+    
+            #btn:hover{
+                border: 2px white solid;
+                background-color:white;
+                color: cadetblue; 
+                outline: none; 
     
             }
-
-            #flip-box-front img {
-                width: 325px;
-                height: 185px;
-            }
-
-            footer { 
-                zoom: 35%; 
-                transform: scale(1); 
-                transform-origin: 0 0; 
-                margin:0;
-            }
-
-            #flip-box-back{
-                font-size: 10px;
-                line-height: 7px;
-            }
-
+    
             #modal{
-                width: 300px;
-                height: 568px;
-                top:50px;
-                left: 9.5%; 
+                text-align: center;
+                background-image: url(https://i.imgur.com/Ubt0W3T.png);
+                width: 800px;
+                height: 1516px;
+                background-size: contain;
+                position: absolute;
+                left: -18%; 
             }
-
-            #btn{
-                margin-top: 5px;
-            }
-
+    
             .close{
-                font-size: 30px;
-                margin-right:5px
+                font-size: 50px;
+                margin-right:15px
             }
-
-        }
-
+    
+            @media (max-width: 420px) {
+                #gallery{
+                    text-align: center;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                } 
+                
+                #seemore, #seeless{
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                }
+         
+                #flip-box {
+                    width: 325px;
+                    height: 185px;
         
-
-
-
-    </style>
-</head>
-
-<body style="background-color: rgba(26, 26, 26, 1);">
-    <script>
-        function show(){
-        document.getElementById("more").style.display="block";
-        document.getElementById("seemore").style.display="none";
-        document.getElementById("seeless").style.display="block";
-        };
-
-        function hide(){
-        document.getElementById("more").style.display="none";
-        document.getElementById("seemore").style.display="block";
-        }
-    </script>
-
-    <nav class="navbar navbar-inverse" style="background-color:transparent; border:none; ">
-        <div class="container-fluid">
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-            </button>
-            <a style="padding:10px;" class="navbar-brand" href="index.html"><img src="https://i.imgur.com/LS8ms26.png" id="wklogo" ></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav" style="display: flex;">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Work <span class="caret"></span></a>
-                <ul class="dropdown-menu" style="margin-bottom: 150px;">
-                    <li><a href="logos.html">Logos</a></li>
-                    <li><a href="warning.html">UI/UX</a></li>
-                    <li><a href="warning.html">Printables</a></li>
-                    <li><a href="warning.html">Social media support</a></li>
-                    <li><a href="warning.html">Misc</a></li>
+                }
+    
+                #flip-box-front img {
+                    width: 325px;
+                    height: 185px;
+                }
+    
+                footer { 
+                    zoom: 35%; 
+                    transform: scale(1); 
+                    transform-origin: 0 0; 
+                    margin:0;
+                }
+    
+                #flip-box-back{
+                    font-size: 10px;
+                    line-height: 7px;
+                }
+    
+                #modal{
+                    width: 300px;
+                    height: 568px;
+                    top:50px;
+                    left: 9.5%; 
+                }
+    
+                #btn{
+                    margin-top: 5px;
+                }
+    
+                .close{
+                    font-size: 30px;
+                    margin-right:5px
+                }
+    
+            }
+    
+            
+    
+    
+    
+        </style>
+    </head>
+    
+    <body style="background-color: rgba(26, 26, 26, 1);">
+        <script>
+            function show(){
+            document.getElementById("more").style.display="block";
+            document.getElementById("seemore").style.display="none";
+            document.getElementById("seeless").style.display="block";
+            };
+    
+            function hide(){
+            document.getElementById("more").style.display="none";
+            document.getElementById("seemore").style.display="block";
+            }
+        </script>
+    
+        <nav class="navbar navbar-inverse" style="background-color:transparent; border:none; ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a style="padding:10px;" class="navbar-brand" href="index.html"><img src="https://i.imgur.com/LS8ms26.png" id="wklogo" ></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" style="display: flex;">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Work <span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="margin-bottom: 150px;">
+                        <li><a href="logos.html">Logos</a></li>
+                        <li><a href="warning.html">UI/UX</a></li>
+                        <li><a href="warning.html">Printables</a></li>
+                        <li><a href="warning.html">Social media support</a></li>
+                        <li><a href="warning.html">Misc</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li style="position: absolute; right:15px;">
+                        <section id="social">
+                            <div><a href="https://www.facebook.com/KhayatiWael/" target="_blank"><img src="https://i.imgur.com/V8ILiBl.png"  alt="FB"></a></div>
+                            <div id="vl"></div>
+                            <div><a href="https://www.linkedin.com/in/wael-khayati-6a4289200/" target="_blank"><img src="https://i.imgur.com/PVRumk5.png" alt="Linked in"></a></div>
+                            <div id="vl"></div>
+                            <div><a href="https://www.instagram.com/wael.khayati/?hl=en" target="_blank"><img src="https://i.imgur.com/Q9bvZsI.png" alt="IG"></a></div>
+                        </section>
+                    </li>
                 </ul>
-                </li>
-                <li><a href="#contact">Contact</a></li>
-                <li style="position: absolute; right:15px;">
-                    <section id="social">
-                        <div><a href="https://www.facebook.com/KhayatiWael/" target="_blank"><img src="https://i.imgur.com/V8ILiBl.png"  alt="FB"></a></div>
-                        <div id="vl"></div>
-                        <div><a href="https://www.linkedin.com/in/wael-khayati-6a4289200/" target="_blank"><img src="https://i.imgur.com/PVRumk5.png" alt="Linked in"></a></div>
-                        <div id="vl"></div>
-                        <div><a href="https://www.instagram.com/wael.khayati/?hl=en" target="_blank"><img src="https://i.imgur.com/Q9bvZsI.png" alt="IG"></a></div>
-                    </section>
-                </li>
-            </ul>
+                
+                </div>
+            </div>
+        </nav> 
+            
+        
+    <div id="gallery">
+        <div id="flip-box">
+            <div id="flip-box-inner">
+                <div id="flip-box-front">
+                    <img src="https://i.imgur.com/EmuN77h.png">
+                </div>
+                <div id="flip-box-back">
+                    <br><br><br><br><br><br>
+                    <h2>Xalim Artworks</h2>
+                    <p>Artist</p>
+                    <button type="button" id="btn" data-toggle="modal" data-target="#myModal" >Read More</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog" >
+            <div class="modal-dialog" >
+            
+                <!-- Modal content-->
+                <div class="modal-content" >         
+                    <div id="modal"><button type="button" class="close" data-dismiss="modal" >&times;</button></div>
+                </div>
             
             </div>
         </div>
-    </nav> 
-        
     
-<div id="gallery">
-    <div id="flip-box">
-        <div id="flip-box-inner">
-            <div id="flip-box-front">
-                <img src="https://i.imgur.com/EmuN77h.png">
-            </div>
-            <div id="flip-box-back">
-                <br><br><br><br><br><br>
-                <h2>Xalim Artworks</h2>
-                <p>Artist</p>
-                <button type="button" id="btn" data-toggle="modal" data-target="#myModal" >Read More</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog" >
-        <div class="modal-dialog" >
-        
-            <!-- Modal content-->
-            <div class="modal-content" >         
-                <div id="modal"><button type="button" class="close" data-dismiss="modal" >&times;</button></div>
-            </div>
-        
-        </div>
-    </div>
-
-
-
-
-    <div id="flip-box">
-        <div id="flip-box-inner">
-            <div id="flip-box-front">
-                <img src="https://i.imgur.com/lfzkvv6.png">
-            </div>
-            <div id="flip-box-back">
-                <br><br><br><br><br><br><br><br>
-                <h2>Dclix</h2>
-                <p>Marketing Agency</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="flip-box">
-        <div id="flip-box-inner">
-            <div id="flip-box-front">
-                <img src="https://i.imgur.com/r1M8vAS.png">
-            </div>
-            <div id="flip-box-back">
-                <br><br><br><br><br><br><br><br>
-                <h2>Princess Closet</h2>
-                <p>Online Clothing Store</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="flip-box">
-        <div id="flip-box-inner">
-            <div id="flip-box-front">
-                <img src="https://i.imgur.com/MXxJx6J.png">
-            </div>
-            <div id="flip-box-back">
-                <br><br><br><br><br><br><br><br>
-                <h2>Career Quest</h2>
-                <p>Online Business Event</p>
-            </div>
-        </div>
-    </div>
     
-    <div id="seemore"><span onclick="show()">See more...</span></div>
-    <div id="more">
+    
+    
         <div id="flip-box">
             <div id="flip-box-inner">
                 <div id="flip-box-front">
-                    <img src="https://i.imgur.com/nEiFEHx.png">
+                    <img src="https://i.imgur.com/lfzkvv6.png">
                 </div>
                 <div id="flip-box-back">
                     <br><br><br><br><br><br><br><br>
-                    <h2>FRESCO</h2>
-                    <p>Sea Food Store</p>
+                    <h2>Dclix</h2>
+                    <p>Marketing Agency</p>
                 </div>
             </div>
         </div>
+    
         <div id="flip-box">
             <div id="flip-box-inner">
                 <div id="flip-box-front">
-                    <img src="https://i.imgur.com/4xaNYaB.png">
+                    <img src="https://i.imgur.com/r1M8vAS.png">
                 </div>
                 <div id="flip-box-back">
                     <br><br><br><br><br><br><br><br>
-                    <h2>Vintage Touch</h2>
+                    <h2>Princess Closet</h2>
                     <p>Online Clothing Store</p>
                 </div>
             </div>
         </div>
+    
         <div id="flip-box">
             <div id="flip-box-inner">
                 <div id="flip-box-front">
-                    <img src="https://i.imgur.com/5bQBx8w.png">
+                    <img src="https://i.imgur.com/MXxJx6J.png">
                 </div>
                 <div id="flip-box-back">
                     <br><br><br><br><br><br><br><br>
-                    <h2>Bayar Market</h2>
-                    <p>Grocery Store</p>
+                    <h2>Career Quest</h2>
+                    <p>Online Business Event</p>
                 </div>
             </div>
         </div>
-        <div id="flip-box">
-            <div id="flip-box-inner">
-                <div id="flip-box-front">
-                    <img src="https://i.imgur.com/49uwLXM.png">
-                </div>
-                <div id="flip-box-back">
-                    <br><br><br><br><br><br><br><br>
-                    <h2>MERIT TBS</h2>
-                    <p>IT Club</p>
+        
+        <div id="seemore"><span onclick="show()">See more...</span></div>
+        <div id="more">
+            <div id="flip-box">
+                <div id="flip-box-inner">
+                    <div id="flip-box-front">
+                        <img src="https://i.imgur.com/nEiFEHx.png">
+                    </div>
+                    <div id="flip-box-back">
+                        <br><br><br><br><br><br><br><br>
+                        <h2>FRESCO</h2>
+                        <p>Sea Food Store</p>
+                    </div>
                 </div>
             </div>
+            <div id="flip-box">
+                <div id="flip-box-inner">
+                    <div id="flip-box-front">
+                        <img src="https://i.imgur.com/4xaNYaB.png">
+                    </div>
+                    <div id="flip-box-back">
+                        <br><br><br><br><br><br><br><br>
+                        <h2>Vintage Touch</h2>
+                        <p>Online Clothing Store</p>
+                    </div>
+                </div>
+            </div>
+            <div id="flip-box">
+                <div id="flip-box-inner">
+                    <div id="flip-box-front">
+                        <img src="https://i.imgur.com/5bQBx8w.png">
+                    </div>
+                    <div id="flip-box-back">
+                        <br><br><br><br><br><br><br><br>
+                        <h2>Bayar Market</h2>
+                        <p>Grocery Store</p>
+                    </div>
+                </div>
+            </div>
+            <div id="flip-box">
+                <div id="flip-box-inner">
+                    <div id="flip-box-front">
+                        <img src="https://i.imgur.com/49uwLXM.png">
+                    </div>
+                    <div id="flip-box-back">
+                        <br><br><br><br><br><br><br><br>
+                        <h2>MERIT TBS</h2>
+                        <p>IT Club</p>
+                    </div>
+                </div>
+            </div>
+            <div id="seeless"><a id="seeless" href="#gallery" onclick="hide()">See Less</a></div>
         </div>
-        <div id="seeless"><a id="seeless" href="#gallery" onclick="hide()">See Less</a></div>
-    </div>
+        
+        </div>
+        <footer>
+                <div id="about">
+                    <table>
+                        <tr>   
+                            <td  id="WK-logo-footer"></td>
+                            <td  id="Text-footer">
+                                <h2>Wael Khayati</h2>
+                                <p>
+                                    I do Logo Design, Photo editing, UX/UI design and much more...<br>
+                                    I also coach graphic design at my university and study business.<br>
+                                    Check out my work and contact me for any help :D
+                                </p>
+                                <section id="social" style="float:left; margin-top: 0;">
+                                    <div><a href="https://www.facebook.com/KhayatiWael/" target="_blank"><img src="https://i.imgur.com/V8ILiBl.png"  alt="FB"></a></div>
+                                    <div id="vl"></div>
+                                    <div><a href="https://www.linkedin.com/in/wael-khayati-6a4289200/" target="_blank"><img src="https://i.imgur.com/PVRumk5.png" alt="Linked in"></a></div>
+                                    <div id="vl"></div>
+                                    <div><a href="https://www.instagram.com/wael.khayati/?hl=en" target="_blank"><img src="https://i.imgur.com/Q9bvZsI.png" alt="IG"></a></div>
+                                    <div id="vl"></div>
+                                    <div><a href="https://www.deviantart.com/thezombisto-gfx/gallery/all" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/deviantart-2.svg" alt="deviantart"></a></div>
+                                </section>
+                            </td>
+                        </tr>
+                    </table> 
+                </div>
+                <div id="contact">
+                    <h2 id="h2" style=" padding-left: 2px;">Contact Me</h2>
+                    <form onsubmit="return validateform()" action="warning.html">
+                        <table id="formtable">
+                            <tr >
+                                <td colspan="5"><h2 style=" padding-left: 2px;"></h2></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><input name="name" type="text" placeholder="Full Name" ><br></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><input name="email" type="email" placeholder="Email Address" ><br></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5"><input name="tel" type="tel" placeholder="Phone Number" onsubmit="return validate()"></td>
+                            </tr>
+                            <tr>                            
+                                <td colspan="5"><textarea id="Message" name="message" rows="4" cols="80" placeholder="Write Your Message Here"></textarea></td>
+                            </tr>
+                            <tr style="text-align: center; vertical-align: bottom;">
+                                <td id="txxt" style="width: 10%"><p style="font-size: 20px;">&#9993;</p></td>
+                                <td id="txxt" style="width: 30%; text-align: left; user-select: text"><p style="font-size: small;">khayatiwael@gmail.com</p></td>
+                                <td id="txxt" style="width: 10%"><p style="font-size: 20px;">&#9743;</p></td>
+                                <td id="txxt" style="width: 30%; text-align: left; user-select: text"><p style="font-size:small">(+216) 29 600 760</p></td>
+                                <td style="width: 20%;"><button  type="submit" >Send</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                
+                <div id="links">
+                    <h2 id="h2" >Links</h2> 
+                    <ul id="biglinks">
+                        <li id="biglinksitem"><a  href="index.html">Home</a></li>
+                        <li id="biglinksitem">
+                            <span style=" color: cadetblue;">My work</span>
+                            <ul>
+                                <li><a  href="logos.html">Logos</a></li>
+                                <li><a  href="warning.html">UI/UX</a></li>
+                                <li><a  href="warning.html">Printables</a></li>
+                                <li><a  href="warning.html">Social Media Support</a></li>
+                                <li><a  href="warning.html">Misc</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="copyright">
+                    <span style="color: white;" >© copyright 2021</span>
+                </div>
+        </footer>
+        
+    </body>
+    </html>
     
-    </div>
-    <footer>
-            <div id="about">
-                <table>
-                    <tr>   
-                        <td  id="WK-logo-footer"></td>
-                        <td  id="Text-footer">
-                            <h2>Wael Khayati</h2>
-                            <p>
-                                I do Logo Design, Photo editing, UX/UI design and much more...<br>
-                                I also coach graphic design at my university and study business.<br>
-                                Check out my work and contact me for any help :D
-                            </p>
-                            <section id="social" style="float:left; margin-top: 0;">
-                                <div><a href="https://www.facebook.com/KhayatiWael/" target="_blank"><img src="https://i.imgur.com/V8ILiBl.png"  alt="FB"></a></div>
-                                <div id="vl"></div>
-                                <div><a href="https://www.linkedin.com/in/wael-khayati-6a4289200/" target="_blank"><img src="https://i.imgur.com/PVRumk5.png" alt="Linked in"></a></div>
-                                <div id="vl"></div>
-                                <div><a href="https://www.instagram.com/wael.khayati/?hl=en" target="_blank"><img src="https://i.imgur.com/Q9bvZsI.png" alt="IG"></a></div>
-                                <div id="vl"></div>
-                                <div><a href="https://www.deviantart.com/thezombisto-gfx/gallery/all" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/deviantart-2.svg" alt="deviantart"></a></div>
-                            </section>
-                        </td>
-                    </tr>
-                </table> 
-            </div>
-            <div id="contact">
-                <h2 id="h2" style=" padding-left: 2px;">Contact Me</h2>
-                <form onsubmit="return validateform()" action="warning.html">
-                    <table id="formtable">
-                        <tr >
-                            <td colspan="5"><h2 style=" padding-left: 2px;"></h2></td>
-                        </tr>
-                        <tr>
-                            <td colspan="5"><input name="name" type="text" placeholder="Full Name" ><br></td>
-                        </tr>
-                        <tr>
-                            <td colspan="5"><input name="email" type="email" placeholder="Email Address" ><br></td>
-                        </tr>
-                        <tr>
-                            <td colspan="5"><input name="tel" type="tel" placeholder="Phone Number" onsubmit="return validate()"></td>
-                        </tr>
-                        <tr>                            
-                            <td colspan="5"><textarea id="Message" name="message" rows="4" cols="80" placeholder="Write Your Message Here"></textarea></td>
-                        </tr>
-                        <tr style="text-align: center; vertical-align: bottom;">
-                            <td id="txxt" style="width: 10%"><p style="font-size: 20px;">&#9993;</p></td>
-                            <td id="txxt" style="width: 30%; text-align: left; user-select: text"><p style="font-size: small;">khayatiwael@gmail.com</p></td>
-                            <td id="txxt" style="width: 10%"><p style="font-size: 20px;">&#9743;</p></td>
-                            <td id="txxt" style="width: 30%; text-align: left; user-select: text"><p style="font-size:small">(+216) 29 600 760</p></td>
-                            <td style="width: 20%;"><button  type="submit" >Send</button></td>
-                        </tr>
-                    </table>
-                </form>
-            </div>
-            
-            <div id="links">
-                <h2 id="h2" >Links</h2> 
-                <ul id="biglinks">
-                    <li id="biglinksitem"><a  href="index.html">Home</a></li>
-                    <li id="biglinksitem">
-                        <span style=" color: cadetblue;">My work</span>
-                        <ul>
-                            <li><a  href="logos.html">Logos</a></li>
-                            <li><a  href="warning.html">UI/UX</a></li>
-                            <li><a  href="warning.html">Printables</a></li>
-                            <li><a  href="warning.html">Social Media Support</a></li>
-                            <li><a  href="warning.html">Misc</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div id="copyright">
-                <span style="color: white;" >© copyright 2021</span>
-            </div>
-    </footer>
-    
-</body>
-</html>
