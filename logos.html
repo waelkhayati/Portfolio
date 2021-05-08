@@ -1,124 +1,197 @@
 <html lang="en">
 <head>
-  <title>Logos</title>
-  <link rel="icon" href="https://i.imgur.com/P8ldVGW.png">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'><link rel="stylesheet" href="style.css">
-  <meta property="og:image" content="https://i.imgur.com/NdD8Cjl.png" />
-  <link href="css/demo-page.css" rel="stylesheet" media="all">
+    <title>Logos</title>
+    <link rel="icon" href="https://i.imgur.com/P8ldVGW.png">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'><link rel="stylesheet" href="style.css">
+    <meta property="og:image" content="https://i.imgur.com/NdD8Cjl.png" />
+    <link href="css/demo-page.css" rel="stylesheet" media="all">
     <link href="css/imagehover.min.css" rel="stylesheet" media="all">
-    
-  <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    #gallery{
-        text-align: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }   
 
     
-    #flip-box {
-        background-color: transparent;
-        width: 650px;
-        height: 370px;
-        perspective: 1000px; 
-        display: inline-block;
-        cursor: pointer;
-    }
+     <style>
 
-    #flip-box-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-    }
+        #gallery{
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }   
 
-    #flip-box:hover #flip-box-inner {
-        transform: rotateY(180deg);
-    }
-
-    #flip-box-front, #flip-box-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden; 
-        backface-visibility: hidden;
-    }
-
-    #flip-box-front {
-        background-color: #bbb;
-        color: black;
-    }
-
-    #flip-box-front img {
-        width: 650px;
-        height: 370px;
-    }
-
-    #flip-box-back {
-        background-color: cadetblue;
-        color: white;
-        transform: rotateY(180deg);
-    }
-
-    #seemore, #seeless{
-        color: white;
-        text-decoration: underline;
-        font-size: 20px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-    #seeless {
-        color: white;
-    }
-
-    #seemore:hover, #seeless:hover{
-        color: cadetblue;
-    }
-
-    #more{
-        display: none;
-    }
-
-    @media (max-width: 420px) {
+        
         #flip-box {
-            width: 325px;
-            height: 185px;
-   
+            background-color: transparent;
+            width: 650px;
+            height: 370px;
+            perspective: 1000px; 
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        #flip-box:hover #flip-box-inner {
+            transform: rotateY(180deg);
+        }
+
+        #flip-box-front, #flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden; 
+            backface-visibility: hidden;
+        }
+
+        #flip-box-front {
+            background-color: #bbb;
+            color: black;
         }
 
         #flip-box-front img {
-            width: 325px;
-            height: 185px;
+            width: 650px;
+            height: 370px;
         }
 
-        footer { 
-            zoom: 35%; 
-            transform: scale(1); 
-            transform-origin: 0 0; 
-            margin:0;
-         }
+        #flip-box-back {
+            background-color: cadetblue;
+            color: white;
+            transform: rotateY(180deg);
+        }
 
-         #flip-box-back{
-             font-size: 10px;
-             line-height: 7px;
-         }
+        #seemore, #seeless{
+            color: white;
+            text-decoration: underline;
+            font-size: 20px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
 
-    }
+        #seeless {
+            color: white;
+        }
+
+        #seemore:hover, #seeless:hover{
+            color: cadetblue;
+        }
+
+        #more{
+            display: none;
+        }
+
+        #btn {
+            border-radius: 100px; 
+            color: white;
+            outline: none; 
+            border: 2px white solid;
+            background-color:cadetblue;
+            padding: 10px; 
+            padding-top: 8px; 
+            margin: 10px; 
+            margin-top: 20px; 
+            margin-bottom: 20px;
+        }
+
+        #btn:hover{
+            border: 2px white solid;
+            background-color:white;
+            color: cadetblue; 
+            outline: none; 
+
+        }
+
+        #modal{
+            text-align: center;
+            background-image: url(LogoPresentation.png);
+            width: 800px;
+            height: 1516px;
+            background-size: contain;
+            position: absolute;
+            left: -18%; 
+        }
+
+        .close{
+            font-size: 50px;
+            margin-right:15px
+        }
+
+        @media (max-width: 420px) {
+            #gallery{
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            } 
+            
+            #seemore, #seeless{
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+     
+            #flip-box {
+                width: 325px;
+                height: 185px;
+    
+            }
+
+            #flip-box-front img {
+                width: 325px;
+                height: 185px;
+            }
+
+            footer { 
+                zoom: 35%; 
+                transform: scale(1); 
+                transform-origin: 0 0; 
+                margin:0;
+            }
+
+            #flip-box-back{
+                font-size: 10px;
+                line-height: 7px;
+            }
+
+            #modal{
+                text-align: center;
+                background-image: url(LogoPresentation.png);
+                width: 300px;
+                height: 568px;
+                background-size: contain;
+                position: absolute;
+                top:50px;
+                left: 9.5%; 
+            }
+
+            #btn{
+                margin-top: 5px;
+            }
+
+            .close{
+                font-size: 30px;
+                margin-right:5px
+            }
+
+        }
+
+        
 
 
-  </style>
+
+    </style>
 </head>
 
-<body>
+<body style="background-color: rgba(26, 26, 26, 1);">
     <script>
         function show(){
         document.getElementById("more").style.display="block";
@@ -131,6 +204,7 @@
         document.getElementById("seemore").style.display="block";
         }
     </script>
+
     <nav class="navbar navbar-inverse" style="background-color:transparent; border:none; ">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -172,19 +246,34 @@
         
     
 <div id="gallery">
-        
     <div id="flip-box">
         <div id="flip-box-inner">
             <div id="flip-box-front">
                 <img src="https://i.imgur.com/EmuN77h.png">
             </div>
             <div id="flip-box-back">
-                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br>
                 <h2>Xalim Artworks</h2>
                 <p>Artist</p>
+                <button type="button" id="btn" data-toggle="modal" data-target="#myModal" >Read More</button>
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog" >
+        <div class="modal-dialog" >
+        
+            <!-- Modal content-->
+            <div class="modal-content" >         
+                <div id="modal"><button type="button" class="close" data-dismiss="modal" >&times;</button></div>
+            </div>
+        
+        </div>
+    </div>
+
+
+
 
     <div id="flip-box">
         <div id="flip-box-inner">
@@ -357,5 +446,3 @@
     
 </body>
 </html>
-
-
